@@ -1,10 +1,9 @@
 //your JS code here. If required.
-document.getElementById("form").addEventListener("submit", function(event){
- event.preventDefault(); 
- var firstname = document.getElementById("fname").value;
- var lastname = document.getElementById("lname").value;
- var phonenumber = document.getElementById("phone").value;
- var emailid = document.getElementById("email").value;
+function displayFormValues(){ 
+	var name=document.getElementById('fname').value;
+	var last=document.getElementById('lname').value;
+	var phone=document.getElementById('Pnum').value;
+	var email=document.getElementById('eid').value;
 
- alert("First Name: " + firstname + "\nLast Name: " + lastname + "\nPhone Number: " + phonenumber + "\nEmail ID: " + emailid);
-});
+	alert('First Name:'+name+'\nLast Name:'+last+'\nPhone Number:'+phone+'\nEmail ID:'+email);
+}
